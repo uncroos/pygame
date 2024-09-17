@@ -39,6 +39,9 @@ character_y_pos = screen_height - character_height - stage_height
 #캐릭터 이동 방향
 character_to_x = 0
 
+#캐릭터 이동 속도
+character_speed = 5
+
 
 running = True
 while running:
