@@ -50,6 +50,8 @@ weapon_width = weapon_size[0]
 #무기 발사 계수
 weapon = []
 
+#무기 이동 속도
+weapon_speed = 10
 
 
 running = True
