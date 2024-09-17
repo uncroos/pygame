@@ -12,3 +12,6 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 
 #화면 타이틀 설정
 pygame.display.set_caption("고전 픽셀 게임")
+
+#FPS(Frame Per Second) 설정
+clock = pygame.time.Clock()
