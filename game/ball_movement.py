@@ -62,3 +62,6 @@ ball_images = [
 
 # 공 크기에 따른 최초 스피드
 ball_speed_y = [-18, -15, -12, -9]
+
+# 공
+balls = []
