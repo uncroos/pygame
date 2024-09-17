@@ -77,7 +77,8 @@ while running:
                 character_to_x = 0
 
     # 게임 캐릭터 위치 정의
-    
+    character_x_pos += character_to_x
+
 
     #화면에 그리기
     screen.blit(background, (0, 0)) # 배경 그리기
