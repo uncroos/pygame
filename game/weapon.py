@@ -62,12 +62,22 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
+        if event.type == pygame.KEYDOWN: 
+            if event.key == pygame.K_LEFT:#캐릭터 왼쪽으로
                 character_to_x -= character_speed
-            elif event.key == pygame.K_RIGHT:
+            elif event.key == pygame.K_RIGHT:#캐릭터 오른쪽으로
                 character_to_x += character_speed
+            elif event.key == pygame.K_SPACE: #무기 발사
+                weapon_x_pos = character_x_pos + (character_width / 2) - (weapon_width / 2)
+                weapon_y_pos = character_y_pos
+                weapon.append([weapon_x_pos, weapon_y_pos])
 
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
+                character_to_x = 0
+
+    # 게임 캐릭터 위치 정의
+    
 
     #화면에 그리기
     screen.blit(background, (0, 0)) # 배경 그리기
