@@ -27,3 +27,11 @@ background = pygame.image.load(os.path.join(image_path, "background.png"))
 stage = pygame.image.load(os.path.join(image_path, "stage.png"))
 stage_size = stage.get_rect().size
 stage_height = stage_size[1]
+
+#캐릭터 이미지
+character = pygame.image.load(os.path.join(image_path, "character.png"))
+character_size = character.get_rect().size
+character_width = character_size[0]
+character_height = character_size[1]
+character_x_pos = (screen_width - character_width) / 2
+character_y_pos = screen_height - character_height - stage_height
