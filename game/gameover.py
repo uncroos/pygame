@@ -50,7 +50,7 @@ weapon_width = weapon_size[0]
 weapons = []
 
 #무기 이동 속도
-weapon_speed = 14
+weapon_speed = 10
 
 # 공 만들기
 ball_images = [
@@ -80,7 +80,7 @@ ball_to_remove = -1
 
 # Font 정의
 game_font = pygame.font.Font(None, 40)
-total_time = 100
+total_time = 30
 start_ticks = pygame.time.get_ticks() # 시작 시간 정의
 
 # 게임 종료 메시지 
