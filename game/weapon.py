@@ -92,6 +92,10 @@ while running:
 
     #화면에 그리기
     screen.blit(background, (0, 0)) # 배경 그리기
+
+    for weapon_x_pos, weapon_y_pos in weapons:
+        screen.blit(weapon, (weapon_x_pos, weapon_y_pos))
+        
     screen.blit(stage, (0, screen_height - stage_height)) 
     screen.blit(character, (character_x_pos, character_y_pos))
 
