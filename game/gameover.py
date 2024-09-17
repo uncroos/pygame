@@ -1,6 +1,5 @@
 import os
 import pygame
-#########################################
 
 #pygame 기본 초기화
 pygame.init()
@@ -40,7 +39,7 @@ character_y_pos = screen_height - character_height - stage_height
 character_to_x = 0
 
 #캐릭터 이동 속도
-character_speed = 5
+character_speed = 8
 
 #무기 만들기
 weapon = pygame.image.load(os.path.join(image_path, "weapon.png"))
