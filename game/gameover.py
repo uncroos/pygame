@@ -50,7 +50,7 @@ weapon_width = weapon_size[0]
 weapons = []
 
 #무기 이동 속도
-weapon_speed = 10
+weapon_speed = 14
 
 # 공 만들기
 ball_images = [
@@ -266,6 +266,6 @@ screen.blit(msg, msg_rect)
 pygame.display.update()
 
 # 대기
-pygame.time.delay(3000)
+pygame.time.delay(1500)
 
 pygame.quit()
