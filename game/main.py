@@ -35,3 +35,14 @@ character_width = character_size[0]
 character_height = character_size[1]
 character_x_pos = (screen_width - character_width) / 2
 character_y_pos = screen_height - character_height - stage_height
+
+running = True
+while running:
+    dt = clock.tick(30) # 30 fps로 고정
+
+    # 이벤트 처리
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    
