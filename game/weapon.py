@@ -85,8 +85,10 @@ while running:
         character_x_pos = screen_width - character_width
 
     # 무기 위치 조정
-    weapon
+    weapons = [[w[0], w[1] - weapon_speed] for w in weapons]
 
+    # 무기 없애기
+    weapons  = [[w[0], w[1]] for w in weapons if w[1] > 0]
 
     #화면에 그리기
     screen.blit(background, (0, 0)) # 배경 그리기
