@@ -276,4 +276,4 @@ screen.blit(msg, msg_rect)
 pygame.display.update()
 
 # 대기
-pygame.time.delay(1500)
+pygame.time.delay(3500)
