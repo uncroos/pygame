@@ -59,3 +59,6 @@ ball_images = [
     pygame.image.load(os.path.join(image_path, "balloon2.png")),
     pygame.image.load(os.path.join(image_path, "balloon3.png")),
     pygame.image.load(os.path.join(image_path, "balloon4.png"))]
+
+# 공 크기에 따른 최초 스피드
+ball_speed_y = [-18, -15, -12, -9]
