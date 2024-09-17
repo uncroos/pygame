@@ -52,3 +52,10 @@ weapons = []
 
 #무기 이동 속도
 weapon_speed = 10
+
+# 공 만들기
+ball_images = [
+    pygame.image.load(os.path.join(image_path, "balloon1.png")),
+    pygame.image.load(os.path.join(image_path, "balloon2.png")),
+    pygame.image.load(os.path.join(image_path, "balloon3.png")),
+    pygame.image.load(os.path.join(image_path, "balloon4.png"))]
