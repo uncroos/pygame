@@ -19,10 +19,15 @@ clock = pygame.time.Clock()
 current_path = os.path.dirname(__file__) #현재 파일의 경로
 image_path = os.path.join(current_path, "images")
 
+# 효과음 로드
+clear_sound = pygame.mixer.Sound(os.path.join(image_path, "clear.wav"))
+gameover_sound = pygame.mixer.Sound(os.path.join(image_path, "gameover.wav"))
+
+
 #배경 이미지
 background = pygame.image.load(os.path.join(image_path, "background.png"))
 
-#스테이지 이지미
+#스테이지 이미지
 stage = pygame.image.load(os.path.join(image_path, "stage.png"))
 stage_size = stage.get_rect().size
 stage_height = stage_size[1]
