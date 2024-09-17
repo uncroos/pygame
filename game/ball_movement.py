@@ -135,3 +135,22 @@ while running:
 
         ball_val["pos_x"] += ball_val["to_x"]
         ball_val["pos_y"] += ball_val["to_y"]
+
+    # 화면에 그리기
+    screen.blit(background, (0, 0))
+    
+    for weapon_x_pos, weapon_y_pos in weapons:
+        screen.blit(weapon, (weapon_x_pos, weapon_y_pos))
+
+    for idx, val in enumerate(balls):
+        ball_pos_x = val["pos_x"]
+        ball_pos_y = val["pos_y"]
+        ball_img_idx = val["img_idx"]
+        screen.blit(ball_images[ball_img_idx], (ball_pos_x, ball_pos_y))
+
+    screen.blit(stage, (0, screen_height - stage_height))
+    screen.blit(character, (character_x_pos, character_y_pos))
+    
+    pygame.display.update()
+
+pygame.quit()
