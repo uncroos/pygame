@@ -47,6 +47,11 @@ weapon = pygame.image.load(os.path.join(image_path, "weapon.png"))
 weapon_size = weapon.get_rect().size
 weapon_width = weapon_size[0]
 
+#무기 발사 계수
+weapon = []
+
+
+
 running = True
 while running:
     dt = clock.tick(30) # 30 fps로 고정
