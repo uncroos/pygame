@@ -261,8 +261,15 @@ while running:
     if total_time - elapsed_time <= 0:
         game_result = "Time Over"
         running = False
-
+    
     pygame.display.update()
+
+
+# 게임 오버 메시지 출력 전에 사운드 재생
+if game_result == "Mission Complete":
+    clear_sound.play()
+else:
+    gameover_sound.play()
 
 # 게임 오버 메시지
 msg = game_font.render(game_result, True, (255, 255, 0)) # 노란색
@@ -272,5 +279,3 @@ pygame.display.update()
 
 # 대기
 pygame.time.delay(1500)
-
-pygame.quit()
