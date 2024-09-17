@@ -18,10 +18,13 @@ clock = pygame.time.Clock()
 #게임 초기화(배경화며나, 이미지, 좌표, 속도 등등)
 current_path = os.path.dirname(__file__) #현재 파일의 경로
 image_path = os.path.join(current_path, "images")
+clear_sound = pygame.mixer.Sound("game/sound/clear.wav")
+gameover_sound = pygame.mixer.Sound("game/sound/gameover.wav")
+
 
 # 효과음 로드
-clear_sound = pygame.mixer.Sound(os.path.join(image_path, "clear.wav"))
-gameover_sound = pygame.mixer.Sound(os.path.join(image_path, "gameover.wav"))
+#clear_sound = pygame.mixer.Sound(os.path.join(image_path, "clear.wav"))
+#gameover_sound = pygame.mixer.Sound(os.path.join(image_path, "gameover.wav"))
 
 
 #배경 이미지
@@ -263,7 +266,6 @@ while running:
         running = False
     
     pygame.display.update()
-
 
 # 게임 오버 메시지 출력 전에 사운드 재생
 if game_result == "Mission Complete":
