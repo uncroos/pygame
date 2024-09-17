@@ -48,7 +48,7 @@ weapon_size = weapon.get_rect().size
 weapon_width = weapon_size[0]
 
 #무기 발사 계수
-weapon = []
+weapons = []
 
 #무기 이동 속도
 weapon_speed = 10
@@ -83,6 +83,10 @@ while running:
         character_x_pos = 0
     elif character_x_pos > screen_width - character_width:
         character_x_pos = screen_width - character_width
+
+    # 무기 위치 조정
+    weapon
+
 
     #화면에 그리기
     screen.blit(background, (0, 0)) # 배경 그리기
