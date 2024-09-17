@@ -53,7 +53,6 @@ weapon = []
 #무기 이동 속도
 weapon_speed = 10
 
-
 running = True
 while running:
     dt = clock.tick(30) # 30 fps로 고정
@@ -62,5 +61,11 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                character_to_x -= character_speed
+            elif event.key == pygame.K_RIGHT:
+                character_to_x += character_speed
 
     
