@@ -74,3 +74,7 @@ balls.append({
     "to_x": 3, # x축 이동방향, -3 이면 왼쪽으로, 3 이면 오른쪽으로
     "to_y": -6, # y축 이동방향,
     "init_spd_y": ball_speed_y[0]})# y 최초 속도
+
+# 사라질 무기, 공 정보 저장 변수
+weapon_to_remove = -1
+ball_to_remove = -1
