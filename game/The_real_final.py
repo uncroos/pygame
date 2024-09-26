@@ -54,7 +54,7 @@ weapon_width = weapon_size[0]
 weapons = []
 
 #무기 이동 속도
-weapon_speed = 10
+weapon_speed = 8
 
 # 공 만들기
 ball_images = [
@@ -92,7 +92,7 @@ game_result = "Game Over"
 
 running = True
 while running:
-    dt = clock.tick(30)
+    dt = clock.tick(20)
     
     # 이벤트 처리
     for event in pygame.event.get():
